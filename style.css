@@ -1,0 +1,214 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+header {
+    background: #2E323F;
+    text-align: center;
+    padding: 1em 0;
+    font-size: 1rem;
+}
+
+.nav-toggle {
+    cursor: pointer;
+    border: 0;
+    width: 3em;
+    height: 3em;
+    padding: 0em;
+    border-radius: 50%;
+    background: #072A2D;
+    color: white;
+    transition: opacity 250ms ease;
+    
+    position: absolute;
+    left: 0;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+    opacity: .75;
+}
+
+.hamburger {
+    width: 50%;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 100%;
+}
+
+.hamburger::before {
+    transform: translateY(-6px);
+}
+
+.hamburger::after {
+    transform: translateY(3px);
+}
+
+/* made changes here from video
+   to make it more accessible.
+   
+   Works the same :) */
+.nav {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+}
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+} 
+
+.nav__item {
+    padding: 1em 0;
+    list-style-type: none;
+}
+
+.nav__link {
+    text-decoration: none;
+    color:  white;
+    opacity: 70%;
+}
+
+.nav__link--button {
+    background-color: white;
+    color: #136c72;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.nav__list--primary,
+.nav__list--secondary {
+    padding: 0;
+}
+
+.logo {
+    height: 30px;
+}
+
+.hero {
+    padding: 50px 0;
+    background-color: #3B4050;
+    color: #fff;
+}
+
+.main__text {
+    text-align: center;
+}
+
+.main__h1 {
+    font-size: 2.5rem;
+}
+
+.main__h1 a {
+    color: #A59678;
+}
+
+.main__p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.main__button {
+    background: #A59678;
+    color: #fff;
+    padding: 3px 20px;
+    border-radius: 100px;
+}
+
+.mid__hero {
+    background: #edede9;
+    padding: 50px 0;
+}
+
+.mid__h1 {
+    color: #A59678;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.mid__p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: justify; 
+}
+
+.article__h1 {
+    color: #A59678;
+}
+
+.article__p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.aside__text {
+    background: #2E323F;
+    padding: 30px 10px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+
+.aside__p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.footer__row {
+    display: flex;
+    gap: 30px;
+}
+
+.footer__title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.footer__h2 {
+    font-size: 1.2rem;
+    color: #A59678;
+}
+
+.footer__p {
+    font-size: .7rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
